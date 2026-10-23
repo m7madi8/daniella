@@ -11,7 +11,6 @@ const CONFIG = {
   const mobileNav = matchMedia("(max-width: 760px)");
 
   // Contact CTA: only becomes an external link when a real destination exists
-  const cta = $("#contactCta"), note = $("#contactNote");
   if (CONFIG.contactHref) {
     document.querySelectorAll(".nav__cta, #contactCta").forEach(a => {
       a.href = CONFIG.contactHref;
@@ -19,7 +18,6 @@ const CONFIG = {
       a.target = "_blank";
       a.rel = "noopener noreferrer";
     });
-    if (note) note.hidden = true;
   }
 
   const btn = $(".nav__toggle");
