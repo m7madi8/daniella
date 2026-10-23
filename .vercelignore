@@ -1,0 +1,9 @@
+audit/node_modules
+audit/visual
+AUDIT_EXECUTION_REPORT.md
+audit/capture-viewports.mjs
+audit/nav-qa.mjs
+audit/qa-smoke.mjs
+audit/verify-assets.mjs
+audit/package.json
+audit/package-lock.json
