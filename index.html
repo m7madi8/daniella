@@ -27,7 +27,7 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="nav" id="top">
+<header class="site-header nav" id="top">
   <a class="nav__brand" href="#top" aria-label="Daniella Sophia, back to top">DANIELLA</a>
   <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
   <nav id="menu" class="nav__links" aria-label="Main">
@@ -52,8 +52,8 @@
 </header>
 
 <main id="main">
-<!-- A · OPENING -->
-<section class="hero">
+<div class="hero-wrap">
+<section class="hero" aria-label="Introduction">
   <figure class="hero__photo">
     <picture>
       <source media="(max-width: 760px)" srcset="assets/daniella-hero-mobile.jpg" width="1440" height="1008">
@@ -69,6 +69,7 @@
   </div>
   <p class="wordmark" aria-hidden="true">DANIELLA</p>
 </section>
+</div>
 
 <!-- B · SOUL / BODY / MIND -->
 <section class="sbm" id="identity">
