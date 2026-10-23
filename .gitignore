@@ -1,6 +1,3 @@
-# Separate site (own git / Vercel project)
-/yoga-garden-fl/
-
 # Dependencies
 node_modules/
 audit/node_modules/
