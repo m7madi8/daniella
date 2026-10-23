@@ -1,7 +1,7 @@
 /* ---- CONFIG: set real details here. Leave empty until confirmed. ---- */
 const CONFIG = {
-  contactHref: "",   // e.g. "https://wa.me/…", "mailto:…", or a booking URL
-  contactLabel: "Get in touch"
+  contactHref: "https://www.instagram.com/danimysta/",
+  contactLabel: "Instagram @danimysta"
 };
 
 (function () {
@@ -13,8 +13,12 @@ const CONFIG = {
   // Contact CTA: only becomes an external link when a real destination exists
   const cta = $("#contactCta"), note = $("#contactNote");
   if (CONFIG.contactHref) {
-    cta.href = CONFIG.contactHref; cta.textContent = CONFIG.contactLabel;
-    document.querySelectorAll(".nav__cta").forEach(a => a.href = CONFIG.contactHref);
+    document.querySelectorAll(".nav__cta, #contactCta").forEach(a => {
+      a.href = CONFIG.contactHref;
+      a.textContent = CONFIG.contactLabel;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    });
     if (note) note.hidden = true;
   }
 
